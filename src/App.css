@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-layout {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+}
+
+.main-content-layout {
+  padding: 24px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  max-width: 100%;
+}
+
+.cities-sider {
+  background: #fff !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  width: 250px !important;
+  min-width: 250px !important;
+  margin-left: 24px;
+}
+
+.weather-content {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  flex: 1;
+  margin-right: 24px;
+}
+
+.ant-layout-header {
+  width: 100%;
+  background: #bae0ff !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.header-content {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 48px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.logo h3.ant-typography {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.ant-menu-horizontal {
+  flex: 1;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  background: transparent !important;
+}
+
+.ant-menu-item {
+  min-width: auto !important;
+  color: #0958d9 !important;
+}
+
+.ant-menu-item:hover {
+  color: #0958d9 !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.ant-menu-item-selected {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.ant-menu-vertical {
+  border-right: none;
+}
+
+.ant-spin {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+}
+
+.weather-title {
+  text-align: center;
+  margin-bottom: 24px !important;
+  padding: 0 24px;
+}
+
+/* Стили для шапки таблицы */
+.ant-table-thead > tr > th {
+  background: #bae0ff !important; /* более насыщенный голубой цвет */
+  color: #0958d9; /* более темный синий для текста */
+}
+
+.ant-table-thead > tr > th::before {
+  display: none !important; /* убираем разделительную линию */
+}
+
+/* Удалим стили для карусели */
+.days-carousel,
+.carousel-button,
+.carousel-item,
+.day-item {
+  display: none;
+}
+
+/* Вернем стили для меню */
+.ant-menu-horizontal {
+  flex: 1;
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  background: transparent !important;
+}
+
+.ant-menu-item {
+  min-width: auto !important;
+  color: #0958d9 !important;
+}
+
+.ant-menu-item:hover {
+  color: #0958d9 !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.ant-menu-item-selected {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Стили для списка городов */
+.ant-menu-vertical .ant-menu-item {
+  transition: all 0.3s ease;
+  transform-origin: left center;
+  border-radius: 4px;
+  margin: 4px 8px !important;
+  width: calc(100% - 16px) !important;
+}
+
+.ant-menu-vertical .ant-menu-item:hover {
+  transform: scale(1.05);
+  background: rgba(186, 224, 255, 0.3) !important;
+  padding-left: 24px !important;
+}
+
+.ant-menu-vertical .ant-menu-item-selected {
+  background: #bae0ff !important;
+}
+
+.ant-menu-vertical .ant-menu-item-selected:hover {
+  background: #bae0ff !important;
+}
+
+/* Плавное изменение цвета текста температуры при наведении */
+.ant-menu-vertical .ant-menu-item:hover .ant-typography {
+  color: #0958d9 !important;
+  transition: color 0.3s ease;
+}
